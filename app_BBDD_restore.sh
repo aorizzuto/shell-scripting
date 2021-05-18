@@ -9,7 +9,6 @@ RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 RESET=$(tput sgr0)
 BOLD=$(tput bold)
-NORMAL=$(tput sgr0)
 
 ##############################
 # Variables
@@ -27,6 +26,7 @@ function remove_old_files(){
     rm -f $FILE
 }
 
+# Automation of "thinking"
 function impr(){
     printf "        ${1} "
     if [[ ! -z ${2} ]]
